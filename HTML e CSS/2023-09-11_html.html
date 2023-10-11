@@ -1,0 +1,172 @@
+<!-- 
+os comentários ficam dentro dessa estrutura.
+eles não são impressos enquanto estiverem aqui
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        .title {
+            color: rgb(43, 43, 43);
+            background-color: rgb(173, 189, 230);
+            text-align: center;
+            size: 70;
+        }
+
+        h2 {
+            color: blueviolet;
+            text-align: justify;
+        }
+
+        h3 {
+            color: blueviolet;
+            text-align: justify;
+        }
+
+        p {
+            color: rgb(67, 67, 67);
+            text-align: justify;
+        }
+
+        span {
+            color: rgb(67, 67, 67);
+            text-align: justify;
+        }
+
+        table {
+            color: rgb(67, 67, 67);
+            text-align: center;
+            width: 12cm;
+
+        }
+
+        ul {
+            color: rgb(67, 67, 67);
+            text-align: justify;
+        }
+
+        ol {
+            color: rgb(67, 67, 67);
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=title>
+        <h1>Uma página sobre Amigurumi!</h1>
+    </div>
+    <h2>Você sabe o que é amigurimi?</h2>
+    <p>Amigurumi é uma forma de arte japonesa que envolve a criação de pequenos bonecos de crochê ou tricô. A
+        palavra"amigurumi" é uma combinação das palavras japonesas "<i>ami</i>" (que significa tricô ou crochê) e
+        "<i>nuigurumi</i>" (que significa boneco de pelúcia). Portanto, amigurumi se refere a bonecos feitos à mão
+        com fios, geralmente com umatécnica de crochê apertado para criar peças pequenas e detalhadas.</p>
+
+    <p>A origem exata do amigurumi é um pouco incerta, mas a prática se tornou popular no Japão nas décadas de 1970
+        e 1980. Inicialmente, os amigurumis eram feitos como presentes artesanais e brinquedos para crianças. Com o
+        tempo, o interesse pelo amigurumi se espalhou internacionalmente, tornando-se uma forma de expressão
+        criativa em todo o mundo.</p>
+
+    <p> Hoje em dia, o amigurumi é uma arte amplamente praticada e abrange uma variedade de personagens, animais,
+        objetos e até mesmo criaturas imaginárias. As pessoas criam esses bonecos usando diferentes tipos de fios,
+        padrões e cores para personalizar suas criações. O amigurumi é uma forma divertida e terapêutica de
+        artesanato,
+        apreciada por adultos e crianças, e é frequentemente usado para presentear ou decorar ambientes. </p>
+    <br>
+    <img src="amigurumi.png" alt="Amigurumi" width="300">
+    <br>
+    <h3> Os tipos de ponto utilizados no amigurumi:</h3>
+    <ul>
+        <li>Ponto baixíssimo;</li>
+        <li>Ponto baixo;</li>
+        <li>Aumento;</li>
+        <li>Diminuição.</li>
+    </ul>
+    <h3>Como funciona o amigurumi?</h3>
+    <p>Para fazermos um amigurumi, devemos trabalhar em carreiras contínuas. Carreiras são conjuntos de pontos
+        baixos, aumentos e diminuições. Geralmente seguimos receitas, que são um conjunto de orientações sobre como
+        construir seu amigurumi em determinados conjuntos de carreiras. Eis um exemplo:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Carreira</th>
+                <th>Repetição</th>
+                <th>Qtd pontos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1ª</td>
+                <td>círculo mágico com 6pb</td>
+                <td>6p</td>
+            </tr>
+
+            <tr>
+                <td>2ª</td>
+                <td>(1aum)x6</td>
+                <td>12p</td>
+            </tr>
+
+            <tr>
+                <td>3ª</td>
+                <td>(1aum, 1pb)x6</td>
+                <td>18p</td>
+            </tr>
+
+            <tr>
+                <td>4ª</td>
+                <td>(1aum, 2pb)x6</td>
+                <td>24p</td>
+            </tr>
+
+            <tr>
+                <td>5ª</td>
+                <td>(1aum, 3pb)x6</td>
+                <td>30p</td>
+            </tr>
+
+            <tr>
+                <td>6ª a 8ª</td>
+                <td>(1pb)x6</td>
+                <td>30p</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>Visualmente, a receita apresentada a cima resulta no seguinte trabalho: </p>
+    <img src="graficoAmigurumi.png" alt="Gráfico Amigurumi" width="300">
+    <br>
+    <p>Perceba que os pontos baixos são representados por um "X", enquanto os aumentos são representados por um "W".
+        A receita gráfica nos ajuda a visualizar onde devem ocorrer os aumentos ou diminuições, especialmente quando
+        não temos tanta prática fazendo amigurumis.</p>
+    <span>Outra forma de representação de uma receita é através de lista:</span>
+    <ol>
+        <li>6pb no anel mágico (6p);</li>
+        <li>1aum em cada pb (12p);</li>
+        <li>1pb,1aum em cada pb (18p)...</li>
+    </ol>
+    <span> Ficou interessado? Clique neste <a href="https://www.youtube.com" target="_blank">link</a> para assistir
+        um
+        vídeo-tutorial de
+        como fazer uma bolinha de amigurumi.</span>
+    <br>
+
+    <p>Gostou do que viu aqui? Deixe seu nome e contato para lhe enviarmos uma receita gratuita para praticar o que
+        você aprendeu.</p>
+    <form action="">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name" value="Nome Completo"><br>
+        <label for="contact">Contato:</label><br>
+        <input type="text" id="name" name="name" value="e-mail"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <footer><i>Entre em contato:</i></footer>
+</body>
+
+</html>
