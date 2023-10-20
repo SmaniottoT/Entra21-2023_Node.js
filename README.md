@@ -10,6 +10,6 @@
 
 `Entra21` is a Brazilian program offered by Blusoft in partnership with FAPESC and Blumenau's City Hall. The Node.js Development course is being taught by Fernanda Mattiello (@DevFernanda) at the SENAC facilities in Timbó, SC.
 
-<img src= ./assets/node_js.svg width="200">
+<img src= ./assets/nodejs.png width="200">
 
 `Node.js` is an open-source, server-side JavaScript runtime environment that allows developers to build and execute JavaScript code on the server rather than just in web browsers.
