@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <audio
+      id="audio1"
+      src="./Lady Gaga - Always Remember Us This Way (from A Star Is Born) (Official Music Video)_5vheNbQlsyU.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio
+      id="audio2"
+      src="./Nobody Like U (From _Turning Red__LyricVideo)_mLsUEJPXubc.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio
+      id="audio3"
+      src="./Slipknot - Snuff [OFFICIAL VIDEO] [HD]_LXEKuttVRIo.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio
+      id="audio4"
+      src="./Three Days Grace - Animal I Have Become_xqds0B_meys.mp3"
+      type="audio/mp3"
+    ></audio>
+
+    <h1 class="text-center p-3 mb-2 bg-info-subtle text-emphasis-info">Tami's awesome playlist!</h1>
+    <h4 class="p-3 mb-2 bg-info-subtle text-emphasis-info">Welcome, this is my music playlist.</h4>
+
+    <ul>
+      <li>
+        <span>Lady Gaga - Always Remember Us This Way</span>
+        <button id="playStopButton1" type="button" class="btn btn-secondary">
+          Play
+        </button>
+      </li>
+      <li>
+        <span>4TOWN - Nobody Like U</span>
+        <button id="playStopButton2" type="button" class="btn btn-secondary">
+          Play
+        </button>
+      </li>
+      <li>
+        <span>Slipknot - Snuff</span>
+        <button id="playStopButton3" type="button" class="btn btn-secondary">
+          Play
+        </button>
+      </li>
+      <li>
+        <span>Three Days Grace - Animal I Have Become</span>
+        <button id="playStopButton4" type="button" class="btn btn-secondary">
+          Play
+        </button>
+      </li>
+    </ul>
+
+    <script>
+      function toggleAudio(audioId, buttonId) {
+        let audio = document.getElementById(audioId);
+        let button = document.getElementById(buttonId);
+        let isPlaying = !audio.paused;
+
+        if (isPlaying) {
+          audio.pause();
+          button.textContent = "Play";
+        } else {
+          audio.play();
+          button.textContent = "Stop";
+        }
+      }
+
+      document
+        .getElementById("playStopButton1")
+        .addEventListener("click", function () {
+          toggleAudio("audio1", "playStopButton1");
+        });
+
+      document
+        .getElementById("playStopButton2")
+        .addEventListener("click", function () {
+          toggleAudio("audio2", "playStopButton2");
+        });
+
+      document
+        .getElementById("playStopButton3")
+        .addEventListener("click", function () {
+          toggleAudio("audio3", "playStopButton3");
+        });
+
+      document
+        .getElementById("playStopButton4")
+        .addEventListener("click", function () {
+          toggleAudio("audio4", "playStopButton4");
+        });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

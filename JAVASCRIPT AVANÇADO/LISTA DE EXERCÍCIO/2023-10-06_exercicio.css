@@ -1,0 +1,18 @@
+.tarefaNaoConcluida {
+    text-decoration: none;
+    color: red
+}
+
+
+.tarefaConcluida{
+    text-decoration: line-through;
+    color: green
+}
+
+body {
+    font-family: Arvo, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}

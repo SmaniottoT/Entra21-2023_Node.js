@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Minha coleção de livros</h1>
+    <h2>Atualize sua coleção!</h2>
+    <p>Aqui você pode manter sua coleção de livros, informando:</p>
+    <span>Título:</span>
+    <input type="text" id="titulo">
+    <br>
+    <span>Autor:</span>
+    <input type="text" id="autor">
+    <br>
+    <span>Ano:</span>
+    <input type="text" id="ano">
+    <br>
+    <button onclick="cadastrar();limpar()">Adicionar à coleção</button>
+
+    <h2>Busque por seus livros favoritos!</h2>
+    <p>Aqui você pode buscar pelos seus livros favoritos, informando:</p>
+    <span>Título:</span>
+    <input type="text" id="favorito">
+    <button onclick="buscar();limpar()">Procure na sua coleção</button>
+
+    <div id="buscarDiv"></div>
+
+    <script>
+        const cadastroArray = [];
+
+        const cadastrar = function () {
+            const titulo = document.getElementById("titulo").value;
+            const autor = document.getElementById("autor").value;
+            const ano = document.getElementById("ano").value;
+
+            const cadastro = {
+                titulo: titulo,
+                autor: autor,
+                ano: ano
+            }
+
+            console.log(cadastro);
+
+            cadastroArray.push(cadastro);
+            console.log(cadastroArray);
+        }
+
+        const limpar = function () {
+            document.getElementById("titulo").value = '';
+            document.getElementById("autor").value = '';
+            document.getElementById("ano").value = '';
+
+        }
+
+        const buscar = function () {
+            const favorito = cadastroArray.filter((livro) => livro.titulo.toLowerCase() === document.getElementById("favorito").value.toLowerCase());
+            const buscarDiv = document.getElementById("buscarDiv");
+            buscarDiv.innerHTML = "Informações encontradas:" + "Título: " + favorito[0].titulo + ", Autor: " + favorito[0].autor+ ", Ano: " + favorito[0].ano;
+        }
+    </script>
+</body>
+
+</html>
